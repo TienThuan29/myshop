@@ -1,0 +1,80 @@
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    height: 100vh;
+    background: linear-gradient(120deg, #3ca7ee, #9b408f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form 
+{
+    background-color: white;
+    width: 400px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register-form h1
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.register-form form
+{
+    margin: 50px;
+}
+
+.register-form .row
+{
+    width: 100%;
+}
+
+.register-form .row input
+{
+    width: 100%;
+    height: 26px;
+    border-radius: 5px;
+    border: .5px solid;
+}
+
+.register-form .row #btn
+{
+    font-size: 16px;
+    height: 36px;
+    border: none;
+    background-color: rgb(68, 80, 255);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.register-form .nav-bar
+{
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 14px;
+}
+
+.register-form .nav-bar nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.register-form  .inform
+{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}

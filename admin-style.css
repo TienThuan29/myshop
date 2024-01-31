@@ -1,0 +1,313 @@
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper
+{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper .header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.header h4
+{
+    border: 1px solid;
+    padding: 10px;
+    display: inline-block;
+}
+
+.header h4 a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.header h4 :hover
+{
+    color: chocolate;
+}
+
+.wrapper .container
+{
+    margin-top: 50px;
+    display: flex;
+}
+
+.container .menu
+{
+    width: 15%;
+    text-align: center;
+}
+
+.container .menu h4
+{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.container .menu h4 a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.container .menu h4 :hover
+{
+    color: chocolate;
+}
+
+.info-container
+{
+    width: 85%;
+    margin-left: 30px;
+}
+
+.info-container .tool-box
+{
+    width: 100%;
+    height: 50px;
+    background-color: coral;
+}
+
+.manage-product-box
+{
+    width: 96%;
+    margin-left: 20px;
+}
+
+
+
+.info-container .manage-product-box ul
+{
+    list-style: none;
+}
+
+.manage-product-box ul li
+{
+    margin-top: 30px;
+    
+}
+
+.manage-product-box .products
+{
+    text-align: center;
+}
+
+
+.manage-product-box .box-item
+{
+
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.manage-product-box .box-item .infor
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+.manage-product-box .box-item img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#id
+{
+    min-width: 5%;
+    max-width: 5%;
+}
+
+#name
+{
+    min-width: 18%;
+    max-width: 18%;
+}
+
+#price
+{
+    min-width: 10%;
+    max-width: 10%;
+}
+
+#quantity
+{
+    min-width: 5%;
+    max-width: 5%;
+}
+
+
+#image
+{
+    min-width: 8%;
+    max-width: 8%;
+}
+
+#image-lb
+{
+    min-width: 8%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+#des
+{
+    min-width: 15%;
+    max-width: 30%;
+}
+
+.adding-form
+{
+    width: 100%;
+    height: 250px;
+    border: 1px solid;
+}
+
+
+
+.form
+{
+    width: 96%;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.adding-form .form form
+{
+    display: flex;
+    
+}
+
+.adding-form .form form .row
+{
+    margin-top: 15px;
+}
+
+form .box
+{
+    width: 45%;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+form .box .row 
+{
+    display: flex;
+}
+
+form .box .row  .lb
+{
+    min-width: 120px;
+}
+
+form .btn input
+{
+    font-size: 13px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 70px;
+    cursor: pointer;
+    
+}
+
+#add-btn
+{
+    background-color: rgb(148, 238, 58);
+}
+
+#clear-btn
+{
+    background-color: rgb(218, 56, 88);
+}
+
+.tool-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool-box nav
+{
+    display: flex;
+}
+
+.tool-box .tool-buttons
+{
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.tool-box .tool-buttons button
+{
+    padding: 3px;
+}
+
+
+.tool-box .search-bar
+{
+    margin-right: 20px;
+    font-size: 14px;
+    min-width: 20%;
+    display: flex;
+}
+
+.tool-box .search-bar div
+{
+    margin-right: 15px;
+}
+
+.tool-box .search-bar input
+{
+    height: 20px;
+}
+
+.inform
+{
+    font-size: 12px;
+    color: red;
+    margin-left: 25%;
+    margin-top: 5px;
+}
+
+.remove-form
+{
+    border: 1px solid;
+}
+
+.remove-form .form form
+{
+    display: flex;
+    margin-bottom: 20px ;
+}
+
+.remove-form .form form .ele
+{
+    margin-left: 30px;
+}
+

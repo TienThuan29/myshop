@@ -1,0 +1,96 @@
+*
+{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Be Vietnam';
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-size: 14px;
+    line-height: 1.15;
+}
+
+.wrapper
+{
+    max-width: 84%;
+    margin: 0 auto;
+}
+
+.wrapper .head
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper h3
+{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid;
+
+    display: inline-block; 
+    /* giúp boder vừa khít với text */
+}
+
+.wrapper .head .log-res h3 a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper .head .log-res h3 :hover
+{
+    color: chocolate;
+}
+
+
+ul.products
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* để item có thể xuống hàng */
+    list-style: none;
+}
+
+.products li
+{
+    flex-basis: 21%;
+    /* thuộc tính xác định độ rộng của block item */
+    margin-top: 30px;
+}
+
+.products li img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.products .product-cate
+{
+    text-decoration: none;
+    color: rgb(171, 171, 171);
+}
+
+.products .product-name
+{
+    text-decoration: none;
+}
+.products .product-info form input
+{
+    border: none;
+    width: 70%;
+    height: 24px;
+    cursor: pointer;
+    background-color: rgb(125, 188, 251);
+}
+
+.products .product-info form :hover
+{
+    background-color: dodgerblue;
+}
+

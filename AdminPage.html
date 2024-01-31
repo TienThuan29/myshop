@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>Admin</title>
+</head>
+<body>
+
+    <script>
+        function addingFormShowAndHiden()
+        {
+            const addform = document.getElementById("adding-form");
+            const removeform = document.getElementById("remove-form");
+            if (addform.style.display === "none") {
+                addform.style.display = "block";
+                removeform.style.display = "none";
+            } else {
+                addform.style.display = "none";
+            }
+        }
+
+        function removeFormShowAndHidden()
+        {
+            const addform = document.getElementById("adding-form");
+            const removeform = document.getElementById("remove-form");
+            if (removeform.style.display === "none") {
+                addform.style.display = "none";
+                removeform.style.display = "block";
+            }
+            else {
+                removeform.style.display = "none";
+            }
+        }
+    </script>
+    
+    <div class="wrapper" >
+
+        <!-- Header -->
+        <div class="header">
+            <h4><a href="#">Trang chủ</a></h4>
+            <h4><a href="#">Đăng xuất</a></h4>
+        </div>
+        <!-- End header -->
+
+        <!-- Container -->
+        <div class="container">
+
+            <div class="menu">
+                <h4><a href="#">Quản lý sản phẩm</a></h4>
+                <h4><a href="#">Quản lý khách hàng</a></h4>
+                <h4><a href="#">Quản lý đơn hàng</a></h4>
+            </div>
+            <!-- ---------------- -->
+            <div class="info-container">
+
+                <div class="tool-box">
+                    <nav>
+                        <div class="tool-buttons">
+                            <button onclick="addingFormShowAndHiden()">Thêm sản phẩm</button>
+                        </div>
+                        <div class="tool-buttons">
+                            <button onclick="removeFormShowAndHidden()">Xóa sản phẩm</button>
+                        </div>
+                    </nav>
+                    <div class="search-bar">
+                        <div><a href="#"><i style="font-size:24px" class="fa">&#xf002;</i></a></div>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="adding-form" id="adding-form">
+                    <div class="form">
+                        <form action="#">
+
+                            <div class="box">
+                                <div class="row">
+                                    <div class="lb">Mã sản phẩm</div>
+                                    <input type="text">
+                                </div>
+                                <div class="inform">Mã sản phẩm không hợp lệ</div>
+
+                                <div class="row">
+                                    <div class="lb">Tên sản phẩm</div>
+                                    <input type="text">
+                                </div>
+                                <div class="row">
+                                    <div class="lb">Hình ảnh</div>
+                                    <input type="file">
+                                </div>
+                                <div class="inform">Hình ảnh không đúng định dạng</div>
+
+                                <div class="row">
+                                    <div class="lb">Giá nhập</div>
+                                    <input type="text">
+                                </div>
+                                <div class="inform">Giá nhập không hợp lệ</div>
+                            </div>
+
+                            <div class="box">
+                                <div class="row">
+                                    <div class="lb">Giá bán</div>
+                                    <input type="text">
+                                </div>
+                                <div class="inform">Giá bán không hợp lệ</div>
+
+                                <div class="row">
+                                    <div class="lb">Số lượng</div>
+                                    <input type="text">
+                                </div>
+                                <div class="inform">Số lượng không hợp lệ</div>
+
+                                <div class="row">
+                                    <div class="lb">Mô tả</div>
+                                    <textarea name="" id="" cols="30" rows="4"></textarea>
+                                </div>
+                                <div class="inform">* Thêm sản phẩm thành công *</div>
+                            </div>
+                            
+                            <div>
+                                <div class="btn">
+                                    <input id="add-btn" type="submit" value="Add">
+                                </div>
+                                <br>
+                                <div class="btn">
+                                    <input id="clear-btn" type="reset" value="Clear">
+                                </div>
+                            </div>
+                            
+                        </form>
+                        
+                    </div>                    
+                </div>
+
+
+                <div class="remove-form" id="remove-form">
+                    <div class="form">
+                        <form action="#">
+                            <div class="ele">Nhập mã sản phẩm</div>
+                            <input class="ele" type="text">
+                            <br>
+                            <input class="ele" type="submit" value="Gỡ sản phẩm">
+                        </form>
+                    </div>
+                </div>
+                <br>
+
+                <hr>
+
+                <div class="manage-product-box">
+                    <ul class="products"> 
+                        
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">Mã SP</div>
+                                <div class="infor" id="name">Tên</div>
+                                <div id="image-lb">Hình ảnh</div>
+                                <div class="infor" id="price">Giá nhập</div>
+                                <div class="infor" id="price">Giá bán</div>
+                                <div class="infor" id="quantity">SL</div>
+                                <div class="infor" id="des">Mô tả sản phẩm</div>
+                            </nav>
+                        </li>   
+
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">S001</div>
+                                <div class="infor" id="name">Áo thun Tommy trắng đen</div>
+                                <div id="image"><img src="./img/shirt_01.jpg"></div>
+                                <div class="infor" id="price">50000 VND</div>
+                                <div class="infor" id="price">79000 VND</div>
+                                <div class="infor" id="quantity">423</div>
+                                <div class="infor" id="des">Áo thun chất liệu cotton, bền, mặc siêu mát</div>
+                            </nav>
+                        </li>
+                        
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">S001</div>
+                                <div class="infor" id="name"></div>
+                                <div id="image"><img src="./img/shirt_02.jpg"></div>
+                                <div class="infor" id="price">50000 VND</div>
+                                <div class="infor" id="price">79000 VND</div>
+                                <div class="infor" id="quantity">423</div>
+                                <div class="infor" id="des">Áo thun chất liệu cotton, bền, mặc siêu mát</div>
+                            </nav>
+                        </li>
+
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">S001</div>
+                                <div class="infor" id="name">Áo thun Tommy trắng đen</div>
+                                <div id="image"><img src="./img/shirt_03.jpg"></div>
+                                <div class="infor" id="price">50000 VND</div>
+                                <div class="infor" id="price">79000 VND</div>
+                                <div class="infor" id="quantity">423</div>
+                                <div class="infor" id="des">Áo thun chất liệu cotton, bền, mặc siêu mát</div>
+                            </nav>
+                        </li>
+
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">S001</div>
+                                <div class="infor" id="name">Áo thun Tommy trắng đen</div>
+                                <div id="image"><img src="./img/shirt_04.jpg"></div>
+                                <div class="infor" id="price">50000 VND</div>
+                                <div class="infor" id="price">79000 VND</div>
+                                <div class="infor" id="quantity">423</div>
+                                <div class="infor" id="des">Áo thun chất liệu cotton, bền, mặc siêu mát</div>
+                            </nav>
+                        </li>
+
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">S001</div>
+                                <div class="infor" id="name">Áo thun Tommy trắng đen</div>
+                                <div id="image"><img src="./img/shirt_05.jpg"></div>
+                                <div class="infor" id="price">50000 VND</div>
+                                <div class="infor" id="price">79000 VND</div>
+                                <div class="infor" id="quantity">423</div>
+                                <div class="infor" id="des">Áo thun chất liệu cotton, bền, mặc siêu mát</div>
+                            </nav>
+                        </li>
+
+                        <li>
+                            <nav class="box-item">
+                                <div class="infor" id="id">S001</div>
+                                <div class="infor" id="name">Áo thun Tommy trắng đen</div>
+                                <div id="image"><img src="./img/shirt_06.jpg"></div>
+                                <div class="infor" id="price">50000 VND</div>
+                                <div class="infor" id="price">79000 VND</div>
+                                <div class="infor" id="quantity">423</div>
+                                <div class="infor" id="des">Áo thun chất liệu cotton, bền, mặc siêu mát</div>
+                            </nav>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- -->
+
+    </div>
+
+</body>
+</html>
